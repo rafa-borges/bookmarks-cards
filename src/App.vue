@@ -2,33 +2,24 @@
   <div id="app">
     <b-card-group :columns="true">
       <b-card v-for="(card, i) in cards" v-bind:key="i" :no-body="true">
-        <b-card-header>
-          <b-container :fluid="true">
-            <b-row>
-              <b-col cols="auto" class="mr-auto">{{ card.name }}</b-col>
-              <b-col cols="auto"><b-link v-if="card.level > 2" @click="handleCollapse('card-' + i)">+</b-link></b-col>
-            </b-row>
-          </b-container>
-        </b-card-header>
-        <b-collapse :visible="card.level <= 2" :id="'card-' + i">      
-          <b-list-group> 
-            <b-list-group-item v-for="(bookmark, j) in card.bookmarks" v-bind:key="j" @click="handleClick(bookmark.url)">
-              <b-img v-if="bookmark.icon" :src="bookmark.icon" class="bookmark-icon"/>
-              {{ bookmark.name }}
-            </b-list-group-item>
-          </b-list-group>
-        </b-collapse>
+        <b-card-header>{{ card.name }}</b-card-header>
+        <b-list-group> 
+          <b-list-group-item v-for="(bookmark, j) in card.bookmarks" v-bind:key="j" @click="handleClick(bookmark.url)">
+            <b-img v-if="bookmark.icon" :src="bookmark.icon" class="bookmark-icon"/>
+            {{ bookmark.name }}
+          </b-list-group-item>
+        </b-list-group>
       </b-card>
     </b-card-group>
   </div>
 </template>
 
 <script>
-import { BCard, BCollapse, BContainer, BImg, BListGroup, BListGroupItem } from 'bootstrap-vue';
+import { BCard, BImg, BListGroup, BListGroupItem } from 'bootstrap-vue';
 
 export default {
   name: 'App',
-  components: { BCard, BCollapse, BContainer, BImg, BListGroup, BListGroupItem },
+  components: { BCard, BImg, BListGroup, BListGroupItem },
   data: function() {
     bookmarksData.fetch()
     return {
@@ -38,11 +29,8 @@ export default {
   methods: {
     handleClick: function(url) {
       window.location.href = url
-    },
-    handleCollapse: function(collapseId) {
-      this.$root.$emit('bv::toggle::collapse', collapseId)
     }
-  }
+  }  
 }
 
 var bookmarksData = {
@@ -99,7 +87,7 @@ var bookmarksData = {
     for (let i = 0; i < 10; i++) {
       this.cards.push({ level: 2, name: "Some More Links", bookmarks: [ { name: "Link 1" }, { name: "Link 2" }, { name: "Link 3" } ]})
     }
-    this.cards.push({ level: 3, name: "Some More Links", bookmarks: [ { name: "Link 1" }, { name: "Link 2" }, { name: "Link 3" } ]})
+    this.cards.push({ level: 3, name: "Level 3 Link", bookmarks: [ { name: "Link 1" }, { name: "Link 2" }, { name: "Link 3" } ]})
   }
 }
 
@@ -149,19 +137,12 @@ var bookmarksData = {
     color: #00A082;
     font-size: 14px;
     font-weight: bold;
-    padding: 6px 0px 6px 0px;
+    padding: 6px 6px 6px 10px;
   }
   .card-body {
     border-color: #000000;
   }
   .card-columns {
-    column-count: 4;
-  }  
-  a {
-    color: #00A082;
-  }
-  a:hover {
-    color: #F2CC38;
-    text-decoration: none;
-  }  
+    column-count: 5;
+  } 
 </style>

@@ -1,7 +1,5 @@
-# bookmarks-cards
-
+# Bookmarks Cards
 This is a Vue 2 JavaScript app that renders Chrome bookmarks into cards. It is meant to be used as Chrome extension.
-
 
 ## TODO List
 - Change the UI component for + to a popup-like component
@@ -10,31 +8,15 @@ This is a Vue 2 JavaScript app that renders Chrome bookmarks into cards. It is m
 - VueX or similar for the loading of the chrome data
 - Migration to Vue3
 
-
-## Project setup
+## Project commands
 ```
 yarn install
-```
-
-### Compiles and hot-reloads for development
-```
 yarn serve
-```
-
-### Compiles and minifies for production
-```
 yarn build
-```
-
-### Run your unit tests -> This is pending
-```
 yarn test:unit
-```
-
-### Lints and fixes files
-```
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Running the app
+- As a standalone app: run the ```serve``` command and open index.html - sample data is used for displaying cards
+- Inside Chrome as an extension: [load the extension unpacked](https://developer.chrome.com/extensions/getstarted)
