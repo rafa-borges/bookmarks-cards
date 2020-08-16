@@ -1,5 +1,5 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils'
-import BootstrapVue, { BCardGroup } from 'bootstrap-vue'
+import BootstrapVue from 'bootstrap-vue'
 
 import BookmarksCards from '@/components/BookmarksCards.vue'
 import sample from '@/data/sample-cards.js';
