@@ -1,131 +1,133 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BookmarksCards.vue renders cards when passed 1`] = `
-<b-card-group-stub tag="div" columns="true">
-  <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" footertag="div" tag="div" nobody="true">
-    <b-card-header-stub headertag="div">Key Links</b-card-header-stub>
-    <b-list-group-stub tag="div">
-      <b-list-group-item-stub tag="div" target="_self">
+<div>
+  <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" footertag="div" tag="div" nobody="true" class="key-link">
+    <b-list-group-stub tag="div" horizontal="true">
+      <b-list-group-item-stub tag="div" target="_self" class="flex-fill key-link">
         <b-img-stub src="https://www.google.com/s2/favicons?domain=https://www.gmail.com/" blankcolor="transparent" class="bookmark-icon"></b-img-stub>
         Mail
       </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
+      <b-list-group-item-stub tag="div" target="_self" class="flex-fill key-link">
         <b-img-stub src="https://www.google.com/s2/favicons?domain=https://www.jira.com" blankcolor="transparent" class="bookmark-icon"></b-img-stub>
         Jira
       </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
+      <b-list-group-item-stub tag="div" target="_self" class="flex-fill key-link">
         <b-img-stub src="https://www.google.com/s2/favicons?domain=https://www.stackoverflow.com" blankcolor="transparent" class="bookmark-icon"></b-img-stub>
         Stackoverflow
       </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
+      <b-list-group-item-stub tag="div" target="_self" class="flex-fill key-link">
         <b-img-stub src="https://www.google.com/s2/favicons?domain=https://looker.com" blankcolor="transparent" class="bookmark-icon"></b-img-stub>
         Looker
       </b-list-group-item-stub>
     </b-list-group-stub>
   </b-card-stub>
-  <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" footertag="div" tag="div" nobody="true">
-    <b-card-header-stub headertag="div">Some More Links 1</b-card-header-stub>
-    <b-list-group-stub tag="div">
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 1
-      </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 2
-      </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 3
-      </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 1
-      </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 2
-      </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 3
-      </b-list-group-item-stub>
-    </b-list-group-stub>
-  </b-card-stub>
-  <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" footertag="div" tag="div" nobody="true">
-    <b-card-header-stub headertag="div">Some More Links 2</b-card-header-stub>
-    <b-list-group-stub tag="div">
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 1
-      </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 2
-      </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 3
-      </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 1
-      </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 2
-      </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 3
-      </b-list-group-item-stub>
-    </b-list-group-stub>
-  </b-card-stub>
-  <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" footertag="div" tag="div" nobody="true">
-    <b-card-header-stub headertag="div">Some More Links 3</b-card-header-stub>
-    <b-list-group-stub tag="div">
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 1
-      </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 2
-      </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 3
-      </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 1
-      </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 2
-      </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 3
-      </b-list-group-item-stub>
-    </b-list-group-stub>
-  </b-card-stub>
-  <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" footertag="div" tag="div" nobody="true">
-    <b-card-header-stub headertag="div">Level 3 Link</b-card-header-stub>
-    <b-list-group-stub tag="div">
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 1
-      </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 2
-      </b-list-group-item-stub>
-      <b-list-group-item-stub tag="div" target="_self">
-        <!---->
-        Link 3
-      </b-list-group-item-stub>
-    </b-list-group-stub>
-  </b-card-stub>
-</b-card-group-stub>
+  <div style="margin: 10px;"></div>
+  <b-card-group-stub tag="div" columns="true">
+    <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" footertag="div" tag="div" nobody="true">
+      <b-card-header-stub headertag="div">Some More Links 1</b-card-header-stub>
+      <b-list-group-stub tag="div">
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 1
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 2
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 3
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 1
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 2
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 3
+        </b-list-group-item-stub>
+      </b-list-group-stub>
+    </b-card-stub>
+    <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" footertag="div" tag="div" nobody="true">
+      <b-card-header-stub headertag="div">Some More Links 2</b-card-header-stub>
+      <b-list-group-stub tag="div">
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 1
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 2
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 3
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 1
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 2
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 3
+        </b-list-group-item-stub>
+      </b-list-group-stub>
+    </b-card-stub>
+    <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" footertag="div" tag="div" nobody="true">
+      <b-card-header-stub headertag="div">Some More Links 3</b-card-header-stub>
+      <b-list-group-stub tag="div">
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 1
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 2
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 3
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 1
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 2
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 3
+        </b-list-group-item-stub>
+      </b-list-group-stub>
+    </b-card-stub>
+    <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" footertag="div" tag="div" nobody="true">
+      <b-card-header-stub headertag="div">Level 3 Link</b-card-header-stub>
+      <b-list-group-stub tag="div">
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 1
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 2
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <!---->
+          Link 3
+        </b-list-group-item-stub>
+      </b-list-group-stub>
+    </b-card-stub>
+  </b-card-group-stub>
+</div>
 `;

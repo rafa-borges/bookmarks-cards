@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <BookmarksCards :cards="cards" :click="handleClick"/>
-    <p>{{ version }}</p>
+    <p style="font-size: 10px">{{ version }}</p>
   </div>
 </template>
 
