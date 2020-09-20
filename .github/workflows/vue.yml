@@ -1,4 +1,4 @@
-name: build-and-test
+name: build-test-deploy
 
 on:
   push:
@@ -19,3 +19,8 @@ jobs:
       run: yarn build
     - name: test
       run: yarn test:unit
+    - name: deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
