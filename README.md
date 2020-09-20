@@ -1,13 +1,13 @@
 # Bookmarks Cards
-![build-and-test](https://github.com/rafa-borges/bookmarks-cards/workflows/build-and-test/badge.svg?branch=master)
+![build-test-deploy](https://github.com/rafa-borges/bookmarks-cards/workflows/build-test-deploy/badge.svg?branch=master)
 
-This is a Vue 2 JavaScript app that renders Chrome bookmarks into cards. It is meant to be used as Chrome extension.
+This is a Vue 2 JavaScript app that renders Chrome bookmarks into cards. It is meant to be used as Chrome extension. You can see a [live demo](https://rafa-borges.github.io/).
 
 ## TODO List
-- CI using GitHub actions
-- CD to GitHub pages
 - TypeScript support
 - VueX or similar for the loading of the chrome data
+- Increased testing
+- Break down to smaller components
 - Migration to Vue3
 
 ## Project commands
