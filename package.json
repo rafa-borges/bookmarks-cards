@@ -1,6 +1,6 @@
 {
   "name": "bookmarks-cards",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -11,14 +11,21 @@
   "dependencies": {
     "bootstrap-vue": "^2.1.0",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^9.1.2"
   },
   "devDependencies": {
     "@babel/polyfill": "^7.7.0",
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-unit-jest": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
+    "@types/jest": "^24.0.19",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "@vue/cli-plugin-babel": "~4.5.13",
+    "@vue/cli-plugin-eslint": "~4.5.13",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.13",
+    "@vue/cli-service": "~4.5.13",
+    "@vue/eslint-config-typescript": "^7.0.0",
     "@vue/test-utils": "^1.0.3",
     "babel-eslint": "^10.1.0",
     "bootstrap": "^4.3.1",
@@ -29,7 +36,8 @@
     "portal-vue": "^2.1.6",
     "sass": "^1.19.0",
     "sass-loader": "^8.0.0",
-    "vue-cli-plugin-bootstrap-vue": "~0.6.0",
+    "typescript": "~4.1.5",
+    "vue-cli-plugin-bootstrap-vue": "~0.7.0",
     "vue-template-compiler": "^2.6.11"
   }
 }
