@@ -2,29 +2,29 @@
 
 exports[`BookmarksCards.vue renders cards when passed 1`] = `
 <div>
-  <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" footertag="div" tag="div" nobody="true" class="key-link">
-    <b-list-group-stub tag="div" horizontal="true">
+  <b-card-stub bodytag="div" footertag="div" headertag="div" nobody="true" subtitletag="h6" subtitletextvariant="muted" tag="div" titletag="h4" class="key-link">
+    <b-list-group-stub horizontal="true" tag="div">
       <b-list-group-item-stub tag="div" target="_self" class="flex-fill key-link">
-        <b-img-stub src="https://www.google.com/s2/favicons?domain=https://www.gmail.com/" blankcolor="transparent" class="bookmark-icon"></b-img-stub>
+        <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.gmail.com/" class="bookmark-icon"></b-img-stub>
         Mail
       </b-list-group-item-stub>
       <b-list-group-item-stub tag="div" target="_self" class="flex-fill key-link">
-        <b-img-stub src="https://www.google.com/s2/favicons?domain=https://www.jira.com" blankcolor="transparent" class="bookmark-icon"></b-img-stub>
+        <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.jira.com" class="bookmark-icon"></b-img-stub>
         Jira
       </b-list-group-item-stub>
       <b-list-group-item-stub tag="div" target="_self" class="flex-fill key-link">
-        <b-img-stub src="https://www.google.com/s2/favicons?domain=https://www.stackoverflow.com" blankcolor="transparent" class="bookmark-icon"></b-img-stub>
+        <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.stackoverflow.com" class="bookmark-icon"></b-img-stub>
         Stackoverflow
       </b-list-group-item-stub>
       <b-list-group-item-stub tag="div" target="_self" class="flex-fill key-link">
-        <b-img-stub src="https://www.google.com/s2/favicons?domain=https://looker.com" blankcolor="transparent" class="bookmark-icon"></b-img-stub>
+        <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://looker.com" class="bookmark-icon"></b-img-stub>
         Looker
       </b-list-group-item-stub>
     </b-list-group-stub>
   </b-card-stub>
   <div style="margin: 10px;"></div>
-  <b-card-group-stub tag="div" columns="true">
-    <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" footertag="div" tag="div" nobody="true">
+  <b-card-group-stub columns="true" tag="div">
+    <b-card-stub bodytag="div" footertag="div" headertag="div" nobody="true" subtitletag="h6" subtitletextvariant="muted" tag="div" titletag="h4">
       <b-card-header-stub headertag="div">Some More Links 1</b-card-header-stub>
       <b-list-group-stub tag="div">
         <b-list-group-item-stub tag="div" target="_self" class="standard-link">
@@ -53,7 +53,7 @@ exports[`BookmarksCards.vue renders cards when passed 1`] = `
         </b-list-group-item-stub>
       </b-list-group-stub>
     </b-card-stub>
-    <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" footertag="div" tag="div" nobody="true">
+    <b-card-stub bodytag="div" footertag="div" headertag="div" nobody="true" subtitletag="h6" subtitletextvariant="muted" tag="div" titletag="h4">
       <b-card-header-stub headertag="div">Some More Links 2</b-card-header-stub>
       <b-list-group-stub tag="div">
         <b-list-group-item-stub tag="div" target="_self" class="standard-link">
@@ -82,7 +82,7 @@ exports[`BookmarksCards.vue renders cards when passed 1`] = `
         </b-list-group-item-stub>
       </b-list-group-stub>
     </b-card-stub>
-    <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" footertag="div" tag="div" nobody="true">
+    <b-card-stub bodytag="div" footertag="div" headertag="div" nobody="true" subtitletag="h6" subtitletextvariant="muted" tag="div" titletag="h4">
       <b-card-header-stub headertag="div">Some More Links 3</b-card-header-stub>
       <b-list-group-stub tag="div">
         <b-list-group-item-stub tag="div" target="_self" class="standard-link">
@@ -111,7 +111,7 @@ exports[`BookmarksCards.vue renders cards when passed 1`] = `
         </b-list-group-item-stub>
       </b-list-group-stub>
     </b-card-stub>
-    <b-card-stub bodytag="div" titletag="h4" subtitletag="h6" subtitletextvariant="muted" headertag="div" footertag="div" tag="div" nobody="true">
+    <b-card-stub bodytag="div" footertag="div" headertag="div" nobody="true" subtitletag="h6" subtitletextvariant="muted" tag="div" titletag="h4">
       <b-card-header-stub headertag="div">Level 3 Link</b-card-header-stub>
       <b-list-group-stub tag="div">
         <b-list-group-item-stub tag="div" target="_self" class="standard-link">
