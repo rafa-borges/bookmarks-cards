@@ -28,28 +28,20 @@ exports[`BookmarksCards.vue renders cards when passed 1`] = `
       <b-card-header-stub headertag="div">Some More Links 1</b-card-header-stub>
       <b-list-group-stub tag="div">
         <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 1
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.gmail.com/" class="bookmark-icon"></b-img-stub>
+          Mail
         </b-list-group-item-stub>
         <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 2
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.jira.com" class="bookmark-icon"></b-img-stub>
+          Jira
         </b-list-group-item-stub>
         <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 3
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.stackoverflow.com" class="bookmark-icon"></b-img-stub>
+          Stackoverflow
         </b-list-group-item-stub>
         <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 1
-        </b-list-group-item-stub>
-        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 2
-        </b-list-group-item-stub>
-        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 3
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://looker.com" class="bookmark-icon"></b-img-stub>
+          Looker
         </b-list-group-item-stub>
       </b-list-group-stub>
     </b-card-stub>
@@ -57,28 +49,20 @@ exports[`BookmarksCards.vue renders cards when passed 1`] = `
       <b-card-header-stub headertag="div">Some More Links 2</b-card-header-stub>
       <b-list-group-stub tag="div">
         <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 1
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.gmail.com/" class="bookmark-icon"></b-img-stub>
+          Mail
         </b-list-group-item-stub>
         <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 2
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.jira.com" class="bookmark-icon"></b-img-stub>
+          Jira
         </b-list-group-item-stub>
         <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 3
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.stackoverflow.com" class="bookmark-icon"></b-img-stub>
+          Stackoverflow
         </b-list-group-item-stub>
         <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 1
-        </b-list-group-item-stub>
-        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 2
-        </b-list-group-item-stub>
-        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 3
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://looker.com" class="bookmark-icon"></b-img-stub>
+          Looker
         </b-list-group-item-stub>
       </b-list-group-stub>
     </b-card-stub>
@@ -86,45 +70,146 @@ exports[`BookmarksCards.vue renders cards when passed 1`] = `
       <b-card-header-stub headertag="div">Some More Links 3</b-card-header-stub>
       <b-list-group-stub tag="div">
         <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 1
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.gmail.com/" class="bookmark-icon"></b-img-stub>
+          Mail
         </b-list-group-item-stub>
         <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 2
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.jira.com" class="bookmark-icon"></b-img-stub>
+          Jira
         </b-list-group-item-stub>
         <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 3
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.stackoverflow.com" class="bookmark-icon"></b-img-stub>
+          Stackoverflow
         </b-list-group-item-stub>
         <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 1
-        </b-list-group-item-stub>
-        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 2
-        </b-list-group-item-stub>
-        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 3
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://looker.com" class="bookmark-icon"></b-img-stub>
+          Looker
         </b-list-group-item-stub>
       </b-list-group-stub>
     </b-card-stub>
     <b-card-stub bodytag="div" footertag="div" headertag="div" nobody="true" subtitletag="h6" subtitletextvariant="muted" tag="div" titletag="h4">
-      <b-card-header-stub headertag="div">Level 3 Link</b-card-header-stub>
+      <b-card-header-stub headertag="div">Some More Links 4</b-card-header-stub>
       <b-list-group-stub tag="div">
         <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 1
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.gmail.com/" class="bookmark-icon"></b-img-stub>
+          Mail
         </b-list-group-item-stub>
         <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 2
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.jira.com" class="bookmark-icon"></b-img-stub>
+          Jira
         </b-list-group-item-stub>
         <b-list-group-item-stub tag="div" target="_self" class="standard-link">
-          <!---->
-          Link 3
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.stackoverflow.com" class="bookmark-icon"></b-img-stub>
+          Stackoverflow
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://looker.com" class="bookmark-icon"></b-img-stub>
+          Looker
+        </b-list-group-item-stub>
+      </b-list-group-stub>
+    </b-card-stub>
+    <b-card-stub bodytag="div" footertag="div" headertag="div" nobody="true" subtitletag="h6" subtitletextvariant="muted" tag="div" titletag="h4">
+      <b-card-header-stub headertag="div">Some More Links 5</b-card-header-stub>
+      <b-list-group-stub tag="div">
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.gmail.com/" class="bookmark-icon"></b-img-stub>
+          Mail
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.jira.com" class="bookmark-icon"></b-img-stub>
+          Jira
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.stackoverflow.com" class="bookmark-icon"></b-img-stub>
+          Stackoverflow
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://looker.com" class="bookmark-icon"></b-img-stub>
+          Looker
+        </b-list-group-item-stub>
+      </b-list-group-stub>
+    </b-card-stub>
+    <b-card-stub bodytag="div" footertag="div" headertag="div" nobody="true" subtitletag="h6" subtitletextvariant="muted" tag="div" titletag="h4">
+      <b-card-header-stub headertag="div">Some More Links 6</b-card-header-stub>
+      <b-list-group-stub tag="div">
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.gmail.com/" class="bookmark-icon"></b-img-stub>
+          Mail
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.jira.com" class="bookmark-icon"></b-img-stub>
+          Jira
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.stackoverflow.com" class="bookmark-icon"></b-img-stub>
+          Stackoverflow
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://looker.com" class="bookmark-icon"></b-img-stub>
+          Looker
+        </b-list-group-item-stub>
+      </b-list-group-stub>
+    </b-card-stub>
+    <b-card-stub bodytag="div" footertag="div" headertag="div" nobody="true" subtitletag="h6" subtitletextvariant="muted" tag="div" titletag="h4">
+      <b-card-header-stub headertag="div">Some More Links 7</b-card-header-stub>
+      <b-list-group-stub tag="div">
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.gmail.com/" class="bookmark-icon"></b-img-stub>
+          Mail
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.jira.com" class="bookmark-icon"></b-img-stub>
+          Jira
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.stackoverflow.com" class="bookmark-icon"></b-img-stub>
+          Stackoverflow
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://looker.com" class="bookmark-icon"></b-img-stub>
+          Looker
+        </b-list-group-item-stub>
+      </b-list-group-stub>
+    </b-card-stub>
+    <b-card-stub bodytag="div" footertag="div" headertag="div" nobody="true" subtitletag="h6" subtitletextvariant="muted" tag="div" titletag="h4">
+      <b-card-header-stub headertag="div">Some More Links 8</b-card-header-stub>
+      <b-list-group-stub tag="div">
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.gmail.com/" class="bookmark-icon"></b-img-stub>
+          Mail
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.jira.com" class="bookmark-icon"></b-img-stub>
+          Jira
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.stackoverflow.com" class="bookmark-icon"></b-img-stub>
+          Stackoverflow
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://looker.com" class="bookmark-icon"></b-img-stub>
+          Looker
+        </b-list-group-item-stub>
+      </b-list-group-stub>
+    </b-card-stub>
+    <b-card-stub bodytag="div" footertag="div" headertag="div" nobody="true" subtitletag="h6" subtitletextvariant="muted" tag="div" titletag="h4">
+      <b-card-header-stub headertag="div">Some More Links 9</b-card-header-stub>
+      <b-list-group-stub tag="div">
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.gmail.com/" class="bookmark-icon"></b-img-stub>
+          Mail
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.jira.com" class="bookmark-icon"></b-img-stub>
+          Jira
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://www.stackoverflow.com" class="bookmark-icon"></b-img-stub>
+          Stackoverflow
+        </b-list-group-item-stub>
+        <b-list-group-item-stub tag="div" target="_self" class="standard-link">
+          <b-img-stub blankcolor="transparent" src="https://www.google.com/s2/favicons?domain=https://looker.com" class="bookmark-icon"></b-img-stub>
+          Looker
         </b-list-group-item-stub>
       </b-list-group-stub>
     </b-card-stub>

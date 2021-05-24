@@ -2,7 +2,7 @@ import { shallowMount, createLocalVue } from '@vue/test-utils'
 import BootstrapVue from 'bootstrap-vue'
 
 import BookmarksCards from '@/components/BookmarksCards.vue'
-import sample from '@/data/sample-cards.js';
+import sample from '@/data/sample-cards.ts';
 
 const localVue = createLocalVue()
 localVue.use(BootstrapVue)
