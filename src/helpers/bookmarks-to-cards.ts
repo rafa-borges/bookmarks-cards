@@ -28,7 +28,7 @@ export function bookmarksToCards(getBookmarksTree: typeof chrome.bookmarks.getTr
             }
             // Children that have arrays of bookmarks
             for (const childNode of children.filter(node => node.children)) {
-                const name = bookmarkNode.parentId === "0" ? "" : prefix + bookmarkNode.title + " → "
+                const name = bookmarkNode.parentId === "0" ? prefix : prefix + bookmarkNode.title + " → "
                 bookmarkNodeToCard(childNode, name)
             }
         }
