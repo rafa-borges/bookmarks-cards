@@ -8,13 +8,13 @@ export function bookmarksToCards(getBookmarksTree: typeof chrome.bookmarks.getTr
             const children = topTreeNode.children;
             if (children != undefined) {
                 for (const categoryTreeNode of children) {
-                    bookmarkNodeToCard(categoryTreeNode, "", 1)
+                    bookmarkNodeToCard(categoryTreeNode, "")
                 }
             }
         }
     })
 
-    function bookmarkNodeToCard(bookmarkNode: BookmarkTreeNode, prefix: string, level: number): void {
+    function bookmarkNodeToCard(bookmarkNode: BookmarkTreeNode, prefix: string): void {
         // Direct bookmarks of the node
         const cardItems = new Array<CardItem>()
         const children = bookmarkNode.children;
@@ -23,13 +23,13 @@ export function bookmarksToCards(getBookmarksTree: typeof chrome.bookmarks.getTr
                 cardItems.push(new CardItem(bookmark.title, bookmark.url, "chrome://favicon/" + bookmark.url))
             }
             if (cardItems.length > 0) {
-                const name = level === 1 ? "Top Bookmarks" : prefix + bookmarkNode.title
+                const name = prefix + bookmarkNode.title
                 cards.push(new Card(name, cardItems))
             }
             // Children that have arrays of bookmarks
             for (const childNode of children.filter(node => node.children)) {
-                const name = level === 1 ? "" : prefix + bookmarkNode.title + " → "
-                bookmarkNodeToCard(childNode, name, level + 1)
+                const name = bookmarkNode.parentId === "0" ? "" : prefix + bookmarkNode.title + " → "
+                bookmarkNodeToCard(childNode, name)
             }
         }
     }
