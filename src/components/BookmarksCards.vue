@@ -2,9 +2,9 @@
   <div>
     <b-card v-for="(card, i) in keyCards(cards)" :key="i" no-body class="key-link">
       <b-list-group horizontal> 
-        <b-list-group-item v-for="(bookmark, j) in card.bookmarks" :key="j" @click="click(bookmark.url)" class="flex-fill key-link">
-          <b-img v-if="bookmark.icon" :src="bookmark.icon" class="bookmark-icon"/>
-          {{ bookmark.name }}
+        <b-list-group-item v-for="(item, j) in card.items" :key="j" @click="click(item.url)" class="flex-fill key-link">
+          <b-img v-if="item.icon" :src="item.icon" class="item-icon"/>
+          {{ item.name }}
         </b-list-group-item>
       </b-list-group>
     </b-card>
@@ -13,9 +13,9 @@
       <b-card v-for="(card, i) in standardCards(cards)" :key="i" no-body>
         <b-card-header>{{ card.name }}</b-card-header>       
         <b-list-group> 
-          <b-list-group-item v-for="(bookmark, j) in card.bookmarks" :key="j" @click="click(bookmark.url)" class="standard-link">
-            <b-img v-if="bookmark.icon" :src="bookmark.icon" class="bookmark-icon"/>
-            {{ bookmark.name }}
+          <b-list-group-item v-for="(item, j) in card.items" :key="j" @click="click(item.url)" class="standard-link">
+            <b-img v-if="item.icon" :src="item.icon" class="item-icon"/>
+            {{ item.name }}
           </b-list-group-item>
         </b-list-group>
       </b-card>
@@ -79,7 +79,7 @@ export default {
     background-color: #00A082;
     color: #F2CC38;
   }    
-  .bookmark-icon {
+  .item-icon {
     margin-top: -2px;
     margin-right: 1px;
     height: 16px;

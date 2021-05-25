@@ -1,12 +1,10 @@
 export class Card {
     readonly name: string;
-    readonly cards: Array<CardItem>;
-    readonly bookmarks: Array<CardItem>;
+    readonly items: Array<CardItem>;
 
-    constructor(name: string, cards: Array<CardItem>) {
+    constructor(name: string, items: Array<CardItem>) {
         this.name = name;
-        this.cards = cards;
-        this.bookmarks = cards;
+        this.items = items;
     }
 
 }
