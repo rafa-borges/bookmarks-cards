@@ -7,5 +7,6 @@
     "newtab": "index.html"
   },
 
-  "permissions": ["bookmarks", "chrome://favicon/"]
+  "permissions": ["bookmarks", "history", "sessions", "tabs", "chrome://favicon/"]
+
 }

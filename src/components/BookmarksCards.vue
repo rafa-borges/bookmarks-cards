@@ -2,7 +2,7 @@
   <div>
     <b-card v-for="(card, i) in keyCards(cards)" :key="i" no-body class="key-link">
       <b-list-group horizontal> 
-        <b-list-group-item v-for="(item, j) in card.items" :key="j" @click="click(item.url)" class="flex-fill key-link">
+        <b-list-group-item v-for="(item, j) in card.items" :key="j" @click="clickOnCardItem(item)" class="flex-fill key-link">
           <b-img v-if="item.icon" :src="item.icon" class="item-icon"/>
           {{ item.name }}
         </b-list-group-item>
@@ -11,9 +11,9 @@
     <div style="margin: 10px"/>
     <b-card-group columns>
       <b-card v-for="(card, i) in standardCards(cards)" :key="i" no-body>
-        <b-card-header>{{ card.name }}</b-card-header>       
+        <b-card-header @click="clickOnCard(card)">{{ card.name }}</b-card-header>
         <b-list-group> 
-          <b-list-group-item v-for="(item, j) in card.items" :key="j" @click="click(item.url)" class="standard-link">
+          <b-list-group-item v-for="(item, j) in card.items" :key="j" @click="clickOnCardItem(item)" class="standard-link">
             <b-img v-if="item.icon" :src="item.icon" class="item-icon"/>
             {{ item.name }}
           </b-list-group-item>
@@ -30,7 +30,8 @@ export default {
   components: {},
   props: {
     cards: Array,
-    click: Function
+    clickOnCard: Function,
+    clickOnCardItem: Function
   }, 
   methods: {
     keyCards(cards) {
@@ -97,6 +98,11 @@ export default {
     font-size: 14px;
     font-weight: bold;
     padding: 6px 6px 6px 10px;
+    cursor: pointer;
+  }
+  .card-header:hover {
+    background-color: #00A082;
+    color: #F2CC38;
   }
   .card-body {
     border-color: #000000;

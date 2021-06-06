@@ -20,7 +20,7 @@ export function bookmarksToCards(getBookmarksTree: typeof chrome.bookmarks.getTr
         const children = bookmarkNode.children;
         if (children != undefined) {
             for (const bookmark of children.filter(node => node.url)) {
-                cardItems.push(new CardItem(bookmark.title, bookmark.url, "chrome://favicon/" + bookmark.url))
+                cardItems.push(new CardItem(bookmark.title, bookmark.url))
             }
             if (cardItems.length > 0) {
                 const name = prefix + bookmarkNode.title

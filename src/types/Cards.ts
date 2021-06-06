@@ -14,7 +14,7 @@ export class CardItem {
     readonly url: string;
     readonly icon: string;
 
-    constructor(name: string, url: string = "", icon: string = "") {
+    constructor(name: string = "", url: string = "", icon: string = "chrome://favicon/" + url) {
         this.name = name;
         this.url = url;
         this.icon = icon;

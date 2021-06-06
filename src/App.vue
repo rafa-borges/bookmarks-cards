@@ -1,15 +1,17 @@
 <template>
   <div id="app">
-    <BookmarksCards :cards="cards" :click="handleClick"/>
+    <BookmarksCards :cards="cards" :click-on-card="handleClickOnCard" :click-on-card-item="handleClickOnCardItem"/>
     <p style="font-size: 10px">{{ version }}</p>
   </div>
 </template>
 
 <script>
 import BookmarksCards from '@/components/BookmarksCards.vue'
-import { bookmarksToCards } from "@/helpers/bookmarks-to-cards";
-import { getBrowserInstance } from "@/helpers/browser-instance";
-import sample from '@/data/sample-cards.ts';
+import { getBrowserInstance } from "@/helpers/browser-instance"
+import { bookmarksToCards } from "@/helpers/bookmarks-to-cards"
+import { sessionsToCards } from "@/helpers/sessions-to-cards"
+import { cardClicked, cardItemClicked } from "@/helpers/card-handlers"
+import sample from '@/data/sample-cards.ts'
 
 const cards = []
 
@@ -18,7 +20,9 @@ export default {
   components: { BookmarksCards },
   data() {
     try {
-      bookmarksToCards(getBrowserInstance().bookmarks.getTree, cards)
+      const browser = getBrowserInstance()
+      bookmarksToCards(browser.bookmarks.getTree, cards)
+      sessionsToCards(browser.sessions.getRecentlyClosed, cards)
     } catch (error) {
       cards.push(...sample)
     }
@@ -28,8 +32,11 @@ export default {
     }
   },
   methods: {
-    handleClick(url) {
-      window.location.href = url
+    handleClickOnCard(card) {
+      cardClicked(card)
+    },
+    handleClickOnCardItem(cardItem) {
+      cardItemClicked(cardItem)
     }
   }  
 }
