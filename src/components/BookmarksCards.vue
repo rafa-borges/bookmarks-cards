@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-card v-for="(card, i) in keyCards(cards)" :key="i" no-body class="key-link">
-      <b-list-group horizontal> 
+      <b-list-group horizontal>
         <b-list-group-item v-for="(item, j) in card.items" :key="j" @click="clickOnCardItem(item)" class="flex-fill key-link">
           <b-img v-if="item.icon" :src="item.icon" class="item-icon"/>
           {{ item.name }}
@@ -62,7 +62,7 @@ export default {
   div.list-group-item.key-link {
     font-weight: bold;
     font-size: 14px;
-    height: 24px;
+    min-height: 24px;
     background: #F2CC38;
     color: #1e1e1e;
   }
@@ -72,7 +72,6 @@ export default {
   }  
   div.list-group-item.standard-link {
     font-size: 13px;
-    height: 20px;    
     background: #363636;
     color: #f1f1f1;
   }
@@ -88,7 +87,8 @@ export default {
   }
   .card {
     border-color: #000000;
-    max-width: 400px;
+    min-width: 150px;
+    max-width: 600px;
     background: #363636;
   }
   .card-header {
@@ -108,11 +108,57 @@ export default {
     border-color: #000000;
   }
   .card-columns {
-    column-count: 5;
+    column-count: 1;
   } 
   div.key-link {
     text-align: center;
     max-width: 100%;
     background: #F2CC38;
   }
+
+  @media (min-width: 630px) {
+    .card-columns {
+      column-count: 2;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .card {
+      max-width: 400px;
+    }
+    .card-columns {
+      column-count: 3;
+    }
+  }
+
+  @media (min-width: 1300px) {
+    .card-columns {
+      column-count: 4;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .card-columns {
+      column-count: 5;
+    }
+  }
+
+  @media (min-width: 1900px) {
+    .card-columns {
+      column-count: 6;
+    }
+  }
+
+  @media (min-width: 2100px) {
+    .card-columns {
+      column-count: 7;
+    }
+  }
+
+  @media (min-width: 2400px) {
+    .card-columns {
+      column-count: 8;
+    }
+  }
+
 </style>
