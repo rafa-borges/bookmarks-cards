@@ -1,12 +1,12 @@
 {
   "manifest_version": 2,
   "name": "Bookmarks Cards",
-  "version": "1.0.0",
+  "version": "1.0.1",
 
   "chrome_url_overrides" : {
     "newtab": "index.html"
   },
 
-  "permissions": ["bookmarks", "history", "sessions", "tabs", "chrome://favicon/"]
+  "permissions": ["bookmarks", "history", "tabs", "chrome://favicon/"]
 
 }
