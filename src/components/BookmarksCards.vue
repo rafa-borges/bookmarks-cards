@@ -12,7 +12,7 @@
     <b-card-group columns>
       <b-card v-for="(card, i) in standardCards(cards)" :key="i" no-body>
         <b-card-header @click="clickOnCard(card)">{{ card.name }}</b-card-header>
-        <b-list-group> 
+        <b-list-group>
           <b-list-group-item v-for="(item, j) in card.items" :key="j" @click="clickOnCardItem(item)" class="standard-link">
             <b-img v-if="item.icon" :src="item.icon" class="item-icon"/>
             {{ item.name }}
@@ -23,11 +23,8 @@
   </div>
 </template>
 
-<script>
-
+<script lang="ts">
 export default {
-  name: 'BookmarksCards',
-  components: {},
   props: {
     cards: Array,
     clickOnCard: Function,
@@ -47,7 +44,7 @@ export default {
 <style scoped>
   div.list-group {
     margin: 3px;
-  }  
+  }
   div.list-group-item {
     margin: 2px;
     border: 2px 0px 2px 0px;
@@ -69,7 +66,7 @@ export default {
   div.list-group-item.key-link:hover {
     background-color: #00A082;
     color: #f1f1f1;
-  }  
+  }
   div.list-group-item.standard-link {
     font-size: 13px;
     background: #363636;
@@ -78,7 +75,7 @@ export default {
   div.list-group-item.standard-link:hover {
     background-color: #00A082;
     color: #F2CC38;
-  }    
+  }
   .item-icon {
     margin-top: -2px;
     margin-right: 1px;
@@ -109,7 +106,7 @@ export default {
   }
   .card-columns {
     column-count: 1;
-  } 
+  }
   div.key-link {
     text-align: center;
     max-width: 100%;

@@ -1,7 +1,7 @@
 import { Card, CardItem } from '@/types/Cards'
 import BookmarkTreeNode = chrome.bookmarks.BookmarkTreeNode;
 
-export function bookmarksToCards(getBookmarksTree: typeof chrome.bookmarks.getTree, cards: Array<Card>): void {
+export function bookmarksToCards(getBookmarksTree: typeof chrome.bookmarks.getTree, cards: Array<Card>, completionCallback: Function): void {
 
     getBookmarksTree(bookmarkTreeNodes => {
         for (const topTreeNode of bookmarkTreeNodes) {
@@ -12,6 +12,7 @@ export function bookmarksToCards(getBookmarksTree: typeof chrome.bookmarks.getTr
                 }
             }
         }
+        completionCallback()
     })
 
     function bookmarkNodeToCard(bookmarkNode: BookmarkTreeNode, prefix: string): void {
