@@ -4,7 +4,7 @@
 This is a Vue 3 JavaScript app that renders Chrome bookmarks into cards. It is meant to be used as Chrome extension. You can see a [live demo](https://rafa-borges.github.io/bookmarks-cards/).
 
 ## TODO List
-- VueX or similar for the loading of the chrome data
+- Migration to React
 - Automated testing
 - Break down to smaller components
 
