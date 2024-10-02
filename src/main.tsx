@@ -1,49 +1,30 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import { StrictMode } from "react"
+import { createRoot } from "react-dom/client"
+import App from "./App.tsx"
 
-import { getBrowserInstance } from "./helpers/browser-instance"
-import { bookmarksToCards } from './helpers/bookmarks-to-cards'
-import { sessionsToCards } from "./helpers/sessions-to-cards"
-import sample from './data/sample-cards.ts'
+import "bootstrap/dist/css/bootstrap.css"
 
-// Hideous way of doing it - I could not find a better way for doing it on Vue3
+import { BookmarkCard } from "./types/BookmarkCards.ts"
+import { getBrowserInstance } from "./helpers/browser-instance.ts"
+import { bookmarksToCards } from "./helpers/bookmarks-to-cards.ts"
+import { sessionsToCards } from "./helpers/sessions-to-cards.ts"
+import sample from "./data/sample-cards.ts"
 
-const cards = []
-var bookmarksReady = false
-var sessionsReady = false
-
+const cards:Array<BookmarkCard> = []
 try {
     const browser = getBrowserInstance()
-    bookmarksToCards(browser.bookmarks.getTree, cards, onCompletionOfBookmarks)
-    sessionsToCards(browser.sessions.getRecentlyClosed, cards, onCompletionOfSessions)
+    bookmarksToCards(browser.bookmarks.getTree, cards)
+    sessionsToCards(browser.sessions.getRecentlyClosed, cards)
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 } catch (error) {
     cards.push(...sample)
-    onCompletionOfBookmarks()
-    onCompletionOfSessions()
 }
 
-function onCompletionOfBookmarks() {
-    bookmarksReady = true
-    completeAppCreation()
-}
+// @ts-expect-error __* are replaced by Webpack
+const version = __BOOKMARKS_CARDS_VERSION__ + " [" + __BOOKMARKS_CARDS_DATE__ + "]"
 
-function onCompletionOfSessions() {
-    sessionsReady = true
-    completeAppCreation()
-}
-
-function completeAppCreation() {
-    if (bookmarksReady && sessionsReady) {
-        const version = __BOOKMARKS_CARDS_VERSION__ + " [" + __BOOKMARKS_CARDS_DATE__ + "]" // eslint-disable-line
-
-        createRoot(document.getElementById('root')!).render(
-            <StrictMode>
-                <App version={version} cards={"L " + cards.length }/>
-            </StrictMode>,
-        )
-
-    }
-}
+createRoot(document.getElementById('root')!).render(
+    <StrictMode>
+        <App cards={cards} version={version} />
+    </StrictMode>,
+)

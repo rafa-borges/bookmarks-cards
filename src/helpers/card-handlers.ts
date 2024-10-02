@@ -1,7 +1,7 @@
-import { Card, CardItem } from '../types/Cards'
-import { getBrowserInstance } from "./browser-instance.ts";
+import { BookmarkCard, BookmarkCardItem } from "../types/BookmarkCards.ts"
+import { getBrowserInstance } from "./browser-instance.ts"
 
-export function cardClicked(card: Card) : void {
+export function cardClicked(card: BookmarkCard) : void {
     const browser = getBrowserInstance()
 
     const tabsToBeCreated = card.items.length
@@ -20,6 +20,6 @@ export function cardClicked(card: Card) : void {
 
 }
 
-export function cardItemClicked(cardItem: CardItem) : void {
+export function cardItemClicked(cardItem: BookmarkCardItem) : void {
     window.location.href = cardItem.url
 }

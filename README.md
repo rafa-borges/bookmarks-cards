@@ -4,7 +4,7 @@
 This is a React TypeScript app that renders bookmarks into cards. It is meant to be used as Chrome extension. You can see a [live demo](https://rafa-borges.github.io/bookmarks-cards/).
 
 ## TODO List
-- Make it work!!
+- Visual adjustments
 - Automated testing
 - Break down to smaller components
 
@@ -16,5 +16,5 @@ npm run build
 ```
 
 ## Running the app
-- As a standalone app: run the ```serve``` command and open index.html - sample data is used for displaying cards
+- As a standalone app: run the ```npm run dev``` command and open index.html - sample data is used for displaying cards
 - Inside Chrome as an extension: [load the extension unpacked](https://developer.chrome.com/extensions/getstarted)

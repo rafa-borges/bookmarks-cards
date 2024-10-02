@@ -1,7 +1,7 @@
-import { Card, CardItem } from '../types/Cards'
+import { BookmarkCard, BookmarkCardItem } from "../types/BookmarkCards.ts"
 import BookmarkTreeNode = chrome.bookmarks.BookmarkTreeNode;
 
-export function bookmarksToCards(getBookmarksTree: typeof chrome.bookmarks.getTree, cards: Array<Card>, completionCallback: Function): void {
+export function bookmarksToCards(getBookmarksTree: typeof chrome.bookmarks.getTree, cards: Array<BookmarkCard>): void {
 
     getBookmarksTree(bookmarkTreeNodes => {
         for (const topTreeNode of bookmarkTreeNodes) {
@@ -12,20 +12,19 @@ export function bookmarksToCards(getBookmarksTree: typeof chrome.bookmarks.getTr
                 }
             }
         }
-        completionCallback()
     })
 
     function bookmarkNodeToCard(bookmarkNode: BookmarkTreeNode, prefix: string): void {
         // Direct bookmarks of the node
-        const cardItems = new Array<CardItem>()
+        const cardItems = new Array<BookmarkCardItem>()
         const children = bookmarkNode.children;
         if (children != undefined) {
             for (const bookmark of children.filter(node => node.url)) {
-                cardItems.push(new CardItem(bookmark.title, bookmark.url))
+                cardItems.push(new BookmarkCardItem(bookmark.title, bookmark.url))
             }
             if (cardItems.length > 0) {
                 const name = prefix + bookmarkNode.title
-                cards.push(new Card(name, cardItems))
+                cards.push(new BookmarkCard(name, cardItems))
             }
             // Children that have arrays of bookmarks
             for (const childNode of children.filter(node => node.children)) {
