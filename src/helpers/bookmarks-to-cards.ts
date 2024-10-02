@@ -1,4 +1,4 @@
-import { Card, CardItem } from '@/types/Cards'
+import { Card, CardItem } from '../types/Cards'
 import BookmarkTreeNode = chrome.bookmarks.BookmarkTreeNode;
 
 export function bookmarksToCards(getBookmarksTree: typeof chrome.bookmarks.getTree, cards: Array<Card>, completionCallback: Function): void {

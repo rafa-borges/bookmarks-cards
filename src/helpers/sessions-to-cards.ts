@@ -1,5 +1,5 @@
-import { Card, CardItem } from '@/types/Cards'
-import { cardItemTitle } from "@/helpers/card-item-title";
+import { Card, CardItem } from '../types/Cards'
+import { cardItemTitle } from "./card-item-title";
 
 export function sessionsToCards(sessionsRecentlyClosed: typeof chrome.sessions.getRecentlyClosed, cards: Array<Card>, completionCallback: Function): void {
 

@@ -1,0 +1,10 @@
+/* yellow: #F2CC38, green: #00A082 */
+/* padding: 0px 6px 0px 6px; */
+#body {
+  padding: 15px;
+  background-color: #424242;
+}
+
+version {
+  font-size: 10px;
+}

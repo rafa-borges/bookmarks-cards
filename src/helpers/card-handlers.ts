@@ -1,5 +1,5 @@
-import { Card, CardItem } from '@/types/Cards'
-import { getBrowserInstance } from "@/helpers/browser-instance";
+import { Card, CardItem } from '../types/Cards'
+import { getBrowserInstance } from "./browser-instance.ts";
 
 export function cardClicked(card: Card) : void {
     const browser = getBrowserInstance()

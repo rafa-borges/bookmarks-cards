@@ -1,7 +1,7 @@
 import {
   Card,
   CardItem
-} from '@/types/Cards'
+} from '../types/Cards'
 
 const cardItems = new Array<CardItem>()
 cardItems.push(new CardItem("Mail", "https://gmail.com", "https://www.google.com/s2/favicons?domain=https://www.gmail.com/" ))
