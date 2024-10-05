@@ -1,8 +1,8 @@
+import "bootstrap/dist/css/bootstrap.css"
+
 import { StrictMode } from "react"
 import { createRoot } from "react-dom/client"
 import App from "./App.tsx"
-
-import "bootstrap/dist/css/bootstrap.css"
 
 import { BookmarkCard } from "./types/BookmarkCards.ts"
 import { getBrowserInstance } from "./helpers/browser-instance.ts"

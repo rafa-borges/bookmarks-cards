@@ -1,5 +1,6 @@
-import BookmarksCards from "./components/BookmarksCards.tsx"
 import "./App.css"
+
+import BookmarksCards from "./components/BookmarksCards.tsx"
 import { BookmarkCard } from "./types/BookmarkCards.ts"
 import { cardClicked, cardItemClicked } from "./helpers/card-handlers.ts"
 
