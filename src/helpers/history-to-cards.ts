@@ -1,7 +1,7 @@
 import { BookmarkCard, BookmarkCardItem } from "../types/BookmarkCards.ts"
 import { cardItemTitle } from "./card-item-title.ts"
 
-export function historyToCards(historySearch: typeof chrome.history.search, cards: Array<BookmarkCard>): void {
+export async function historyToCards(historySearch: typeof chrome.history.search, cards: Array<BookmarkCard>): Promise<void> {
 
     historySearch({text: ''}, historyItems => {
         const cardItems = historyItems

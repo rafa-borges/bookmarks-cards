@@ -1,23 +1,22 @@
 import { BookmarkCard, BookmarkCardItem } from "../types/BookmarkCards.ts"
 import BookmarkTreeNode = chrome.bookmarks.BookmarkTreeNode;
 
-export function bookmarksToCards(getBookmarksTree: typeof chrome.bookmarks.getTree, cards: Array<BookmarkCard>): void {
+export async function bookmarksToCards(getBookmarksTree: typeof chrome.bookmarks.getTree, cards: Array<BookmarkCard>): Promise<void> {
 
-    getBookmarksTree(bookmarkTreeNodes => {
-        for (const topTreeNode of bookmarkTreeNodes) {
-            const children = topTreeNode.children;
-            if (children != undefined) {
-                for (const categoryTreeNode of children) {
-                    bookmarkNodeToCard(categoryTreeNode, "")
-                }
+    const bookmarkTreeNodes:BookmarkTreeNode[] = await getBookmarksTree()
+    for (const topTreeNode of bookmarkTreeNodes) {
+        const children = topTreeNode.children
+        if (children != undefined) {
+            for (const categoryTreeNode of children) {
+                bookmarkNodeToCard(categoryTreeNode, "")
             }
         }
-    })
+    }
 
     function bookmarkNodeToCard(bookmarkNode: BookmarkTreeNode, prefix: string): void {
         // Direct bookmarks of the node
         const cardItems = new Array<BookmarkCardItem>()
-        const children = bookmarkNode.children;
+        const children = bookmarkNode.children
         if (children != undefined) {
             for (const bookmark of children.filter(node => node.url)) {
                 cardItems.push(new BookmarkCardItem(bookmark.title, bookmark.url))
