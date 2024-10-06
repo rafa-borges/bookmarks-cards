@@ -1,5 +1,5 @@
 # Bookmarks Cards
-![build-test-deploy](https://github.com/rafa-borges/bookmarks-cards/workflows/build-test-deploy/badge.svg?branch=master)
+[![build-and-deploy](https://github.com/rafa-borges/bookmarks-cards/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/rafa-borges/bookmarks-cards/actions/workflows/build-and-deploy.yml)
 
 This is a React TypeScript app that renders bookmarks into cards. It is meant to be used as Chrome extension. You can see a [live demo](https://rafa-borges.github.io/bookmarks-cards/).
 
