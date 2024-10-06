@@ -30,7 +30,6 @@ const BookmarksCards: React.FC<BookmarksCardsProps> = ({ cards, clickOnCard, cli
             ))}
             <div style={{ margin: '10px' }} />
             <div className="card-container">
-            {/* <Card.Group columns> */}
                 {standardCards(cards).map((card, i) => (
                     <Card key={i} body={false}>
                         <Card.Header onClick={() => clickOnCard(card)}>{card.name}</Card.Header>
@@ -45,7 +44,6 @@ const BookmarksCards: React.FC<BookmarksCardsProps> = ({ cards, clickOnCard, cli
                     </Card>
                 ))}
             </div>
-            {/* </Card.Group> */}
         </div>
     );
 };

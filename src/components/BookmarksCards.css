@@ -35,22 +35,21 @@
 }
 .item-icon {
     margin-top: -2px;
-    margin-right: 1px;
+    margin-right: 6px;
     height: 16px;
     width: 16px;
 }
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 10px;
+    column-count: 1;
+    column-gap: 12px;
 }
 .card {
-    box-sizing: border-box;
     border-color: #000000;
-    margin-bottom: 12px;
-    min-width: 350px;
-    max-width: 600px;
+    margin-bottom: 8px;
+    min-width: 250px;
+    max-width: 500px;
     background: #363636;
+    break-inside: avoid;
 }
 .card-header {
     background-color: #1e1e1e;
@@ -74,3 +73,44 @@
     background: #F2CC38;
 }
 
+@media (min-width: 530px) {
+    .card-container {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 800px) {
+    .card-container {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 1100px) {
+    .card-container {
+        column-count: 4;
+    }
+}
+
+@media (min-width: 1400px) {
+    .card-container {
+        column-count: 5;
+    }
+}
+
+@media (min-width: 1650px) {
+    .card-container {
+        column-count: 6;
+    }
+}
+
+@media (min-width: 2000px) {
+    .card-container {
+        column-count: 7;
+    }
+}
+
+@media (min-width: 2200px) {
+    .card-container {
+        column-count: 8;
+    }
+}
