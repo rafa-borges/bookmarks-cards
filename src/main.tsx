@@ -21,7 +21,6 @@ async function main() {
         cards.push(...sample)
     }
 
-    // @ts-expect-error __* are replaced by Webpack
     const version = __BOOKMARKS_CARDS_VERSION__ + " [" + __BOOKMARKS_CARDS_DATE__ + "]"
 
     createRoot(document.getElementById('root')!).render(
