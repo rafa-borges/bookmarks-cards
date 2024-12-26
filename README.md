@@ -17,3 +17,9 @@ npm run build
 ## Running the app
 - As a standalone app ```npm run dev``` and open index.html - sample data is used for displaying cards
 - Inside Chrome as an extension: [load the extension unpacked](https://developer.chrome.com/extensions/getstarted)
+
+## Updating dependencies
+```
+npm install -g npm-check-updates
+ncu -u
+```
