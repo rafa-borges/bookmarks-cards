@@ -67,6 +67,12 @@
 .card-body {
     border-color: #000000;
 }
+.card-as-overlay {
+    margin-top: 6px;
+    border-color: #00A082;
+    border-width: 2px;
+}
+
 .key-link {
     text-align: center;
     max-width: 100%;

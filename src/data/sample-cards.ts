@@ -10,7 +10,7 @@ const cards = new Array<BookmarkCard>();
 cards.push(new BookmarkCard("Key Links", cardItems))
 
 for (let i = 0; i < 15; i++) {
-  cards.push(new BookmarkCard(`Some More Links ${i + 1}`, cardItems))
+  cards.push(new BookmarkCard(`Some More Links ${i + 1}`, cardItems, i % 2 === 0))
 }
 
 export default cards

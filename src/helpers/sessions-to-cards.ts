@@ -8,7 +8,7 @@ export async function sessionsToCards(sessionsRecentlyClosed: typeof chrome.sess
     const cardItems = sessions
         .filter(sessionItem => sessionItem.tab != undefined)
         .filter(sessionItem => !sessionItem.tab?.url?.startsWith("chrome"))
-        .slice(0, 3)
+        .slice(0, 5)
         .map(sessionItem => new BookmarkCardItem(cardItemTitle(sessionItem.tab?.title), sessionItem.tab?.url))
     cards.push(new BookmarkCard("Recently Closed", cardItems))
 

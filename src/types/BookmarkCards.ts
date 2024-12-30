@@ -1,10 +1,12 @@
 export class BookmarkCard {
     readonly name: string
     readonly items: Array<BookmarkCardItem>
+    readonly isNested: boolean
 
-    constructor(name: string, items: Array<BookmarkCardItem>) {
+    constructor(name: string, items: Array<BookmarkCardItem>, isNested: boolean = false) {
         this.name = name
         this.items = items
+        this.isNested = isNested
     }
 
 }
