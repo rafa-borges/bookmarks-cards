@@ -13,7 +13,7 @@ export function cardClicked(card: BookmarkCard) : void {
         browser.tabs.create({ url: cardItem.url }, tab => {
             tabsIdsCreated.push((tab.id as number))
             if (tabsIdsCreated.length === tabsToBeCreated) {
-                browser.tabs.group({  tabIds: tabsIdsCreated })
+                browser.tabs.group({  tabIds: tabsIdsCreated as [number, ...number[]] })
             }
         })
     })
